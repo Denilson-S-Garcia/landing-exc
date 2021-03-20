@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  max-width: 1440px;
+  overflow-x: hidden !important;
+}
+header {
+  height: 75px;
+  background-color: #212343;
+}
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.logo {
+  background-color: azure;
+  margin-left: 5%;
+}
+nav {
+  width: 50%;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.menu {
+  width: 100%;
+  display: none;
+}
+
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(224, 73, 3);
+  font-size: 22px;
+  font-weight: 600;
+}
+#section--banner-form {
+  height: 555px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/header_bg.png);
+}
+#section--banner-form .form {
+  display: flex;
+  justify-content: space-around;
+}
+.form .desc {
+  background-color: rgba(40, 26, 121, 0.548);
+  width: 40%;
+  height: 20vw;
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+.form .desc-area {
+  margin: auto;
+}
+.desc-area ul li {
+  font-size: 22px;
+  color: azure;
+  list-style: circle;
+  text-decoration: none;
+  line-height: 50px;
+}
+.formulario-mobile {
+  display: none;
+}
+.formulario form {
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.form .formulario {
+  background-color: #ffffff;
+  border: 10px solid #cccc;
+  width: 400px;
+  height: 620px;
+  margin-top: -40px;
+}
+.formulario h2 {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+.formulario .button {
+  background-color: #212343;
+  font-size: 20px;
+  font-weight: 600;
+  color: azure;
+}
+.form .formulario input {
+  display: block;
+  width: 95%;
+  border: 2px solid #212343;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+label b {
+  font-size: 19px;
+  padding-bottom: 15px;
+}
+#section--details {
+  height: auto;
+  padding: 60px;
+  background-color: #dddd;
+}
+#section--details .sobre {
+  width: 60%;
+  margin: auto;
+}
+#section--details .sobre h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #212343;
+  font-weight: 600;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+#section--details .sobre p {
+  font-size: 20px;
+  line-height: 25px;
+}
+.section-services {
+  padding: 60px;
+}
+.section-services h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #212343;
+  margin-left: 35%;
+  padding-bottom: 80px;
+}
+.section-services-logos .service-area img {
+  margin-left: 35%;
+}
+.section-services-logos .service-area p {
+  font-size: 19px;
+  padding: 30px;
+}
+.section-services-logos .service-area h3 {
+  margin-left: 30%;
+  font-size: 21px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.section-services .section-services-logos {
+  display: flex;
+}
+footer {
+  background-color: #212343;
+}
+.footer-contatos {
+  margin-left: 30px;
+  color: azure;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-area1 {
+  padding: 30px;
+}
+.footer-area2 {
+  padding: 15px;
+}
+.footer-contatos h4 {
+  font-size: 20px;
+}
+.footer-contatos p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+@media (min-width: 375px) and (max-width: 760px) {
+  body {
+    width: 100vw;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+  }
+  .formulario {
+    display: none;
+  }
+  .form .desc {
+    width: 100vw;
+    display: block;
+    padding: 60px;
+    height: auto;
+  }
+  .sobre {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  #section--details .sobre {
+    width: auto;
+  }
+  #section--details .sobre h2 {
+    font-size: 30px;
+  }
+  #section--details .sobre p {
+    line-height: 30px;
+  }
+  .section-services h2 {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .section-services .section-services-logos {
+    display: block;
+  }
+  .section-services-logos .service-area p {
+    font-size: 23px;
+    padding-bottom: 50px;
+  }
+  #section--banner-form .form {
+    flex-direction: column;
+  }
+  section.form-mobile {
+    padding-left: 22px;
+  }
+  #form-mobile {
+    padding: 10%;
+  }
+  .formulario-mobile {
+    display: block;
+    background-color: #ffffff;
+    border: 10px solid #cccc;
+    width: 95%;
+    height: 620px;
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+  .formulario-mobile h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+  }
+  .formulario-mobile .button {
+    background-color: #212343;
+    font-size: 20px;
+    font-weight: 600;
+    color: azure;
+  }
+  .formulario-mobile input {
+    display: block;
+    width: 95%;
+    border: 2px solid #212343;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .footer-contatos {
+    display: block;
+    font-weight: bold;
+  }
+  .footer-area1 {
+    padding-top: 20px;
+  }
+}
